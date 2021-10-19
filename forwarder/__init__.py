@@ -30,7 +30,7 @@ if ENV:
     except ValueError:
         raise Exception("Your TO_CHATS list does not contain valid integers.")
 
-    REMOVE_TAG = bool(os.environ.get("REMOVE_TAG", False))
+    REMOVE_TAG = bool(os.environ.get("REMOVE_TAG", True))
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     IP_ADDRESS = os.environ.get("IP_ADDRESS", "0.0.0.0")
     URL = os.environ.get("URL", "")  # Does not contain token
